@@ -1,0 +1,6 @@
+#Simple Intrest
+principal_amount=int(input("Enter the Principal Amount : "))
+rate_of_intrest=int(input("Enter the Rate of Intrest : "))
+time=int(input("Enter the time of years : "))
+simple_intrest=principal_amount*rate_of_intrest*time
+print("Simple Intrest Amount is : ",simple_intrest)
