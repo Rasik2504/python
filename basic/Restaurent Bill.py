@@ -1,0 +1,5 @@
+food_cost=int(input("Enter price:"))
+gst=int(input("Enter GST:"))
+tip=int(input("Enter tip:"))
+Total_Amount=food_cost+tip+(food_cost*(gst/100))
+print("Total Amount:",Total_Amount)
