@@ -5,4 +5,5 @@ This repository contains Python practice programs.
 
 - Variables
 - Loops
+- Pattern
 - Functions
