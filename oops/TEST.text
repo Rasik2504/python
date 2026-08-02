@@ -1,0 +1,68 @@
+class Student:
+    college = "ABC"
+
+s1 = Student()
+s2 = Student()
+
+Student.college = "XYZ"
+
+print(s1.college)
+print(s2.college)
+print(Student.college)
+--------------------------------------------------------------------
+class Student:
+    college = "ABC"
+
+    def __init__(self, name):
+        self.name = name
+
+s1 = Student("Rasik")
+s2 = Student("Rahul")
+
+s1.college = "XYZ"
+Student.college = "PQR"
+
+print(s1.college)
+print(s2.college)
+print(Student.college)
+---------------------------------------------------------------
+class method
+class Student:
+
+    college = "ABC"
+
+    @classmethod
+    def change_college(cls, new_name):
+        cls.college = new_name
+
+
+Student.change_college("XYZ")
+
+print(Student.college)
+---------------------------------------------------------------------
+static method
+class Math:
+
+    @staticmethod
+    def square(x):
+        return x * x
+
+print(Math.square(6))
+-------------------------------------------------------
+practice 
+Write a class Employee with:
+
+Class variable:
+company = "OpenAI"
+Instance variables:
+name
+salary
+Instance method:
+display()
+Class method:
+change_company(new_company)
+Static method:
+is_high_salary(salary)
+Returns True if salary ≥ 100000
+Otherwise returns False
+--------------------------------------
