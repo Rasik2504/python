@@ -1,11 +1,10 @@
-#To Calculate Area of Recatngle
 class Rectangle:
-    def __init__(self,length,width):
-        self.length=length
-        self.width=width
+    def __init__(self,ln,wd):
+        self.ln=ln
+        self.wd=wd
     def area(self):
-        return self.length * self.width
+        return self.ln * self.wd
     def display(self):
-        print("Area of Rectangle is : ",self.area())
-res=Rectangle(4,5)
-res.display()
+        print("Area : ",self.area())
+cal=Rectangle(10,20)
+cal.display()

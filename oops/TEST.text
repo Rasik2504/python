@@ -66,3 +66,6 @@ is_high_salary(salary)
 Returns True if salary ≥ 100000
 Otherwise returns False
 --------------------------------------
+id : 1
+Name: Rasik
+Saalry : 1000
