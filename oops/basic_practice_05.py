@@ -9,15 +9,10 @@ class Calculator:
         elif self.op=='-':
             print("Subtraction",self.num1-self.num2)
         elif self.op=='*':
-            if self.num1>self.num2:
-                print("Multiplication:",self.num1*self.num2)
-            else:
-                print("Multiplication:",self.num2*self.num1)
+            print("Multiplication:",self.num1*self.num2)
         elif self.op=='/':
-            if self.num1>self.num2:
-                print("Division:",self.num1/self.num2)
-            else:
-                print("Division",self.num2/self.num1)
+            print("Division:",self.num1/self.num2)
+            
 user1=Calculator(10,29,"+")
 user1.calculate()
 user1=Calculator(10,29,"-")
