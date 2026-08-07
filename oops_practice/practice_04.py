@@ -45,3 +45,50 @@
 # IMPORTANT:
 # Use @property and @balance.setter.
 # Do NOT create get_balance() or set_balance() methods.
+class Bank:
+    def __init__(self,account_no,name,balance):
+        self.account_no=account_no
+        self.name=name
+        self.__balance=balance
+
+    @property 
+    def balance(self):
+        return self.__balance
+
+    @balance.setter
+    def balance(self,value):
+        if value>=0:
+            self.__balance=value
+        else:
+            print("Invalid Balance")
+
+    def deposit(self,amount):
+        if amount>0:
+            self.__balance+=amount
+            print(f"{amount} deposited successfully")
+             
+        else:
+            print("Invalid Deposit") 
+
+    def withdraw(self,amount):
+        if amount<=0:
+            print("Invalid Withdraw")
+        elif amount>self.__balance:
+            print("Insufficient Balance")
+        else:
+            self.balance-=amount
+    def display(self):
+        print("Account Number:",self.account_no)
+        print("Account Holder:",self.name)
+        print("balance:",self.__balance)
+
+b1=Bank(101,"Anisha",55000)
+b1.display()
+b1.deposit(908)
+print("\n")
+b1.display()
+b1.withdraw(8700)
+print("\n")
+b1.display()
+
+
