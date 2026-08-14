@@ -40,3 +40,28 @@
 # - Methods
 # - Object state
 # - Conditional statements inside methods
+class BankAccount:
+    def __init__(self,account_holder,balance):
+        self.account_holder=account_holder
+        self.__balance=balance
+    def get_balance(self):
+        return self.__balance
+    def display(self):
+        print("Acoount Holder : ",self.account_holder)
+        print("Balance : ",self.get_balance())
+    def deposit(self,amount):
+        if(amount>0):
+            self.__balance=self.__balance+amount
+        else:
+            print("Invalid Amount")
+    def withdraw(self,amount):
+        if(amount>0):
+            self.__balance=self.__balance-amount
+        else:
+            print("Invalid Amount")
+c1=BankAccount("Alice",2000)
+c1.display()
+c1.deposit(2000)
+c1.display()
+c1.withdraw(500)
+c1.display()
