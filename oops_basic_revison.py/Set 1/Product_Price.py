@@ -40,3 +40,26 @@
 # - Getter
 # - Setter
 # - Data validation
+class Product:
+    def __init__(self,name,price):
+        self.name=name
+        self.__price=price
+
+    @property
+    def price(self):
+        return self.__price
+
+    @price.setter
+    def price(self,new_price):
+        if self.__price<=new_price:
+            self.__price=new_price
+            print(f"Rs.{new_price} Price is updated")
+        else:
+            print("Invalid Price")
+
+p1=Product("Laptop",60000)
+p1.price=-788
+print(p1.price)
+print('\n')
+p1.price=890000
+print(p1.price)

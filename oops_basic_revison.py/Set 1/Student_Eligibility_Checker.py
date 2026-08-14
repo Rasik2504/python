@@ -41,3 +41,35 @@
 # - Conditional logic
 # - Returning values
 # - Objects
+
+class Student:
+    def __init__(self,name,age,cgpa):
+        self.name=name
+        self.age=age
+        self.cgpa=cgpa
+
+    def display(self):
+        print("Name:",self.name)
+        print("Age:",self.age)
+        print("CGPA:",self.cgpa)
+
+    @staticmethod
+    def is_valid_age(age):
+        if age>=17 and age<=30:
+            return True
+        else: 
+            return False
+
+    def placement_eligibility(self):
+        if self.age>=18 and self.cgpa>=7:
+            return True
+        else:
+            return False
+
+S1=Student("John",19,8.9)
+S1.display()
+print(S1.is_valid_age(S1.age))
+print(S1.placement_eligibility())
+S2=Student("Alice",20,6.7)
+print(S2.is_valid_age(S2.age))
+print(S2.placement_eligibility())

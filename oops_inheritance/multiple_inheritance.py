@@ -28,3 +28,22 @@
 # 8. Change C(A, B) to C(B, A).
 #
 # 9. Run again and observe the difference.
+class A:
+    def show(self):
+        print("Class A")
+
+
+class B:
+    def show(self):
+        print("Class B")
+
+
+class C(B,A):
+    pass
+
+
+c1 = C()
+
+c1.show()
+
+print(C.mro())
