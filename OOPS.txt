@@ -1,0 +1,627 @@
+# ============================================================
+# PYTHON OOP — PRACTICE PROBLEMS
+# EASY → MEDIUM → HARD
+# ============================================================
+
+
+# ============================================================
+# 1. ABSTRACTION
+# ============================================================
+
+# EASY:
+# Create an abstract class Animal with an abstract method sound().
+# Create Dog and Cat classes that implement sound().
+
+# MEDIUM:
+# Create an abstract class Shape with an abstract method area().
+# Create Circle, Rectangle, and Triangle classes.
+# Each class should calculate its own area.
+
+# HARD:
+# Create an abstract Payment class with pay(amount) and refund(amount).
+# Create UPI, CreditCard, and NetBanking classes.
+# Create a function that can process any payment object.
+
+
+# ============================================================
+# 2. ABSTRACT CLASS
+# ============================================================
+
+# EASY:
+# Create an abstract Vehicle class with an abstract start() method.
+# Create Car and Bike classes that implement start().
+
+# MEDIUM:
+# Create an abstract Employee class with:
+# calculate_salary()
+# display_details()
+# Create Developer, Manager, and Tester classes.
+
+# HARD:
+# Create an abstract DataSource class with:
+# connect()
+# fetch_data()
+# close()
+# Create CSVDataSource, DatabaseDataSource, and APIDataSource.
+
+
+# ============================================================
+# 3. ABSTRACT METHOD
+# ============================================================
+
+# EASY:
+# Create an abstract Animal class with an abstract eat() method.
+# Implement eat() in Dog and Cat.
+
+# MEDIUM:
+# Create an abstract Notification class with send(message).
+# Implement Email, SMS, and PushNotification.
+
+# HARD:
+# Create an abstract FileProcessor class with:
+# read()
+# process()
+# save()
+# Implement CSVProcessor, JSONProcessor, and ExcelProcessor.
+
+
+# ============================================================
+# 4. ABSTRACTION + POLYMORPHISM
+# ============================================================
+
+# EASY:
+# Create Dog and Cat classes with sound().
+# Create make_sound(animal) that calls sound().
+
+# MEDIUM:
+# Create Circle, Rectangle, and Triangle classes.
+# Each class must implement area().
+# Create print_area(shape) that works with all shapes.
+
+# HARD:
+# Create UPI, CreditCard, and PayPal classes.
+# Each class must implement pay(amount).
+# Create a payment processor without using if/elif or type checking.
+
+
+# ============================================================
+# 5. INHERITANCE
+# ============================================================
+
+# EASY:
+# Create an Animal parent class with eat().
+# Create a Dog child class with bark().
+
+# MEDIUM:
+# Create a Vehicle parent class.
+# Create Car and Bike child classes.
+# Add common functionality to Vehicle.
+# Add specific functionality to Car and Bike.
+
+# HARD:
+# Create Person -> Employee -> Manager using multilevel inheritance.
+# Use constructors and inherited methods to display all information.
+
+
+# ============================================================
+# 6. METHOD OVERRIDING
+# ============================================================
+
+# EASY:
+# Create Animal.speak().
+# Override speak() inside Dog.
+
+# MEDIUM:
+# Create Shape as a parent class.
+# Create Circle and Rectangle.
+# Override area() in each child class.
+
+# HARD:
+# Create Employee as a parent class.
+# Create Developer, Manager, and Intern.
+# Override calculate_salary() differently in each class.
+
+
+# ============================================================
+# 7. super()
+# ============================================================
+
+# EASY:
+# Create Parent.show().
+# Create Child.show().
+# Use super().show() inside Child.
+
+# MEDIUM:
+# Create Person and Student.
+# Person should have name and age.
+# Student should have roll_number.
+# Use super() to initialize parent attributes.
+
+# HARD:
+# Create Person -> Employee -> Manager.
+# Each class should have its own attributes.
+# Use super() correctly through the inheritance chain.
+
+
+# ============================================================
+# 8. POLYMORPHISM
+# ============================================================
+
+# EASY:
+# Create Dog, Cat, and Cow.
+# Each class should have sound().
+# Create make_sound(animal).
+
+# MEDIUM:
+# Create UPI, Card, and PayPal classes.
+# Each class should have pay().
+# Create one function that processes all payment types.
+
+# HARD:
+# Create PDFReport, ExcelReport, and HTMLReport.
+# Each should have generate().
+# Create one function that generates any type of report
+# without checking the object's type.
+
+
+# ============================================================
+# 9. COMPOSITION
+# ============================================================
+
+# EASY:
+# Create Battery with charge().
+# Create Laptop that HAS-A Battery.
+# Laptop.use() should charge the battery.
+
+# MEDIUM:
+# Create Car that HAS-A Engine and MusicSystem.
+# Implement start() and play_music().
+
+# HARD:
+# Create Computer using composition.
+# Computer should contain CPU, RAM, Storage, and GPU.
+# Implement start() and show_specs().
+
+
+# ============================================================
+# 10. ASSOCIATION
+# ============================================================
+
+# EASY:
+# Create Student and Teacher classes.
+# A Student should be able to learn from a Teacher.
+
+# MEDIUM:
+# Create Doctor and Patient classes.
+# A doctor can treat multiple patients.
+# Both Doctor and Patient should exist independently.
+
+# HARD:
+# Create Customer and Bank classes.
+# A Customer can use a Bank.
+# Both objects should be able to exist independently.
+
+
+# ============================================================
+# 11. AGGREGATION
+# ============================================================
+
+# EASY:
+# Create Department and Teacher classes.
+# A Department should contain multiple Teachers.
+# Teachers should be able to exist independently.
+
+# MEDIUM:
+# Create University and Student classes.
+# University should contain students.
+# Students should be able to exist independently.
+
+# HARD:
+# Create Team and Player classes.
+# Implement:
+# add_player()
+# remove_player()
+# show_players()
+# Demonstrate that a Player can exist after leaving the Team.
+
+
+# ============================================================
+# 12. ASSOCIATION vs AGGREGATION vs COMPOSITION
+# ============================================================
+
+# EASY:
+# Identify the relationship:
+# Teacher <-> Student
+# Is it Association, Aggregation, or Composition?
+# Explain why.
+
+# MEDIUM:
+# Identify the relationship:
+# Department -> Teacher
+# Explain why.
+
+# HARD:
+# Design a system containing:
+# University
+# Department
+# Professor
+# Student
+# Course
+# Decide which relationships are Association,
+# Aggregation, and Composition.
+# Explain your reasoning.
+
+
+# ============================================================
+# 13. DUCK TYPING
+# ============================================================
+
+# EASY:
+# Create Dog and Cat.
+# Both should have speak().
+# Create make_sound(obj) without checking the object's type.
+
+# MEDIUM:
+# Create PDF, Word, and Excel classes.
+# Each should have open().
+# Create open_file(file) that works with all three.
+
+# HARD:
+# Create MySQLDatabase, MongoDatabase, and CSVDatabase.
+# Each should have:
+# connect()
+# fetch()
+# close()
+# Create a DataPipeline that works with all three
+# without type checking.
+
+
+# ============================================================
+# 14. DUNDER / MAGIC METHODS
+# ============================================================
+
+# EASY:
+# Create a Student class.
+# Implement __str__().
+# print(student) should display the student's details.
+
+# MEDIUM:
+# Create a Team class.
+# Implement __len__() to return the number of players.
+# Implement __eq__() to compare two teams by team ID.
+
+# HARD:
+# Create a Money class.
+# Implement:
+# __add__()
+# __sub__()
+# __eq__()
+# __lt__()
+# Allow Money objects to be added, subtracted, and compared.
+
+
+# ============================================================
+# 15. MULTIPLE INHERITANCE
+# ============================================================
+
+# EASY:
+# Create Father and Mother classes.
+# Create Child that inherits from both.
+
+# MEDIUM:
+# Create Person and Employee classes.
+# Create Manager using multiple inheritance with another
+# suitable class such as Leadership.
+
+# HARD:
+# Create:
+# Person
+#    / \
+# Employee Student
+#    \   /
+# WorkingStudent
+# Implement methods and study the resulting MRO.
+
+
+# ============================================================
+# 16. MRO — METHOD RESOLUTION ORDER
+# ============================================================
+
+# EASY:
+# Create A with show().
+# Create B(A).
+# Predict which show() is called when B().show() is executed.
+
+# MEDIUM:
+# Create:
+# A
+# B(A)
+# C(A)
+# D(B, C)
+# Predict D.mro().
+
+# HARD:
+# Create A, B, C, and D using multiple inheritance.
+# Use super() in every show() method.
+# Predict the exact output.
+# Then verify it using ClassName.mro().
+
+
+# ============================================================
+# 17. DEPENDENCY INJECTION
+# ============================================================
+
+# EASY:
+# Create Battery and Laptop.
+# Inject the Battery object into Laptop through __init__().
+
+# MEDIUM:
+# Create PaymentProcessor.
+# Create UPI and CreditCard.
+# Inject the payment method into PaymentProcessor.
+
+# HARD:
+# Create DataPipeline and Database.
+# Create MySQLDatabase, PostgreSQLDatabase, and MongoDatabase.
+# Inject any database into DataPipeline.
+# DataPipeline should work without knowing the concrete database type.
+
+
+# ============================================================
+# 18. SINGLE RESPONSIBILITY PRINCIPLE — SRP
+# ============================================================
+
+# EASY:
+# Given a Student class with:
+# calculate_marks()
+# save_database()
+# Identify the different responsibilities.
+# Split them into appropriate classes.
+
+# MEDIUM:
+# Given Employee with:
+# calculate_salary()
+# save_database()
+# generate_report()
+# send_email()
+# Split the responsibilities into separate classes.
+
+# HARD:
+# Design a data-processing system containing:
+# Data extraction
+# Data cleaning
+# Data validation
+# Data storage
+# Report generation
+# Email notification
+# Apply SRP and separate the responsibilities.
+
+
+# ============================================================
+# 19. OPEN/CLOSED PRINCIPLE — OCP
+# ============================================================
+
+# EASY:
+# A payment class uses if/elif for UPI and Card.
+# Redesign it so new payment methods can be added
+# without modifying the existing processor.
+
+# MEDIUM:
+# Create Email, SMS, WhatsApp, and Push notification classes.
+# Each should have send().
+# Create one notification processor that works with all of them.
+
+# HARD:
+# Design a discount system supporting:
+# Regular
+# Premium
+# Student
+# Employee
+# VIP
+# A new discount type should be addable without modifying
+# the existing discount processor.
+
+
+# ============================================================
+# 20. LISKOV SUBSTITUTION PRINCIPLE — LSP
+# ============================================================
+
+# EASY:
+# Create Bird, Sparrow, and Penguin.
+# Identify why putting fly() directly inside Bird
+# can create a problem.
+
+# MEDIUM:
+# Redesign the bird hierarchy using:
+# Bird
+# FlyingBird
+# Sparrow
+# Eagle
+# Penguin
+# Make the design follow LSP.
+
+# HARD:
+# Study the Rectangle-Square problem.
+# Design the classes so that replacing a parent object
+# with a child object does not break expected behavior.
+
+
+# ============================================================
+# 21. INTERFACE SEGREGATION PRINCIPLE — ISP
+# ============================================================
+
+# EASY:
+# A Machine class contains:
+# print()
+# scan()
+# fax()
+# A simple printer only needs print().
+# Identify the design problem.
+
+# MEDIUM:
+# Separate the large Machine interface into:
+# Printer
+# Scanner
+# Fax
+# Make classes implement only what they need.
+
+# HARD:
+# Design a system for:
+# Printer
+# Scanner
+# Photocopier
+# FaxMachine
+# AllInOneMachine
+# Apply ISP so no class is forced to implement
+# unnecessary methods.
+
+
+# ============================================================
+# 22. DEPENDENCY INVERSION PRINCIPLE — DIP
+# ============================================================
+
+# EASY:
+# Identify why this is tightly coupled:
+# Service directly creates MySQLDatabase.
+# Explain the problem.
+
+# MEDIUM:
+# Create a Database abstraction.
+# Create MySQLDatabase and MongoDatabase.
+# Make Service depend on the abstraction rather than
+# directly depending on MySQLDatabase.
+
+# HARD:
+# Design:
+# DataPipeline
+#      ↓
+# Database abstraction
+#      ↑
+# MySQL / MongoDB
+#
+# Combine abstraction, polymorphism, and dependency injection
+# to create a flexible design.
+
+
+# ============================================================
+# 23. FINAL INTEGRATED PROBLEM — BANKING SYSTEM
+# ============================================================
+
+# HARD:
+# Build a Banking System using:
+# Encapsulation
+# Inheritance
+# Method overriding
+# Polymorphism
+# Abstraction
+#
+# Create:
+# Account
+# SavingsAccount
+# CurrentAccount
+#
+# Implement:
+# deposit()
+# withdraw()
+# check_balance()
+# calculate_interest()
+
+
+# ============================================================
+# 24. FINAL INTEGRATED PROBLEM — PAYMENT SYSTEM
+# ============================================================
+
+# HARD:
+# Build a Payment System using:
+# Abstract class
+# Polymorphism
+# Composition
+# Dependency Injection
+# Open/Closed Principle
+#
+# Support:
+# UPI
+# CreditCard
+# PayPal
+# NetBanking
+#
+# New payment methods should be addable without
+# modifying the existing payment processor.
+
+
+# ============================================================
+# 25. FINAL INTEGRATED PROBLEM — DATA PIPELINE
+# ============================================================
+
+# VERY HARD:
+# Build a Data Pipeline using:
+# Abstraction
+# Composition
+# Polymorphism
+# Dependency Injection
+# SRP
+# OCP
+# DIP
+#
+# Create:
+# DataSource
+# CSVDataSource
+# MySQLDataSource
+# MongoDataSource
+# DataProcessor
+# DataValidator
+# DataStorage
+#
+# The pipeline should be able to work with different
+# data sources without modifying the pipeline itself.
+
+
+# ============================================================
+# TEACHING METHOD
+# ============================================================
+
+# For EVERY topic:
+#
+# 1. Explain the definition.
+# 2. Give a real-world example.
+# 3. Write one simple example.
+# 4. Explain the code line by line.
+# 5. Ask your friend 3 conceptual questions.
+# 6. Give the EASY problem.
+# 7. Give the MEDIUM problem.
+# 8. Give the HARD problem.
+# 9. Ask your friend to explain their solution.
+# 10. Ask: "Why did you use this OOP concept?"
+#
+# IMPORTANT:
+# Do not show the solution immediately.
+# Let your friend struggle with the problem first.
+# Struggling + explaining + correcting = learning.
+#
+# ============================================================
+# LEARNING CYCLE
+# ============================================================
+#
+# LEARN
+#   ↓
+# MAKE NOTES
+#   ↓
+# CODE
+#   ↓
+# SOLVE EASY
+#   ↓
+# SOLVE MEDIUM
+#   ↓
+# SOLVE HARD
+#   ↓
+# EXPLAIN TO FRIEND
+#   ↓
+# FIND MISTAKES
+#   ↓
+# TEACH AGAIN
+#
+# ============================================================
+# GOAL:
+# Don't just remember OOP.
+# Be able to EXPLAIN + CODE + DESIGN using OOP.
+# ============================================================
